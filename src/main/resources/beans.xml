@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="app" class="spring_ex1.MyXMLApp">
+        <property name="service" ref="service_email"></property>
+    </bean>
+<!--    <bean id="service_twitter" class="spring_ex1.TwitterServiceImpl"></bean>-->
+    <bean id="service_email" class="spring_ex1.EmailServiceImpl"></bean>
+
+</beans>
